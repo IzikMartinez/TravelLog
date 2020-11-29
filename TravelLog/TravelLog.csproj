@@ -68,9 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add Pinpoint.aspx" />
+    <Content Include="AdminConsole.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="Images\Pinpoint.png" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginMaster.master" />
     <Content Include="Main Page.aspx" />
+    <Content Include="Pinpoint Image.png" />
     <Content Include="Signup.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="View Pinpoint.aspx" />
     <Content Include="Web.config" />
     <Content Include="World Map Image.png" />
@@ -83,12 +89,33 @@
     <Compile Include="Add Pinpoint.aspx.designer.cs">
       <DependentUpon>Add Pinpoint.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminConsole.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AdminConsole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminConsole.aspx.designer.cs">
+      <DependentUpon>AdminConsole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMaster.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>LoginMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMaster.master.designer.cs">
+      <DependentUpon>LoginMaster.master</DependentUpon>
     </Compile>
     <Compile Include="Main Page.aspx.cs">
       <DependentUpon>Main Page.aspx</DependentUpon>
@@ -122,6 +149,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="View Pinpoint.aspx.cs" Inherits="TravelLog.View_Pinpoint" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="View Pinpoint.aspx.cs" Inherits="TravelLog.View_Pinpoint" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,20 @@
     <form id="form1" runat="server">
         <div>
         </div>
+        <asp:Label ID="lblLocation" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="lblDate" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="lblDescription" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Image ID="img" runat="server" />
+        <br />
+        <br />
+        <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" Text="Return" />
     </form>
 </body>
 </html>
