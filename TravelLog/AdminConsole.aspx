@@ -9,6 +9,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Title</title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <form id="HtmlForm" runat="server">

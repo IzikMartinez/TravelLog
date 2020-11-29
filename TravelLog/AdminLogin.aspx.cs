@@ -12,11 +12,14 @@ namespace TravelLog
 
         protected void btnAdminLogin_OnClick(object sender, EventArgs e)
         {
-            if ((Master as LoginMaster).TxtUsername.Text != "Admin")
-                (Master as LoginMaster).RfvUsername.ErrorMessage = "Invalid Admin name";
-            if ((Master as LoginMaster).TxtPassword.Text != "Password")
-                (Master as LoginMaster).RfvPassword.ErrorMessage = "Invalid Password";    
-            Response.Redirect("AdminConsole.aspx");
+            if (Master.TxtUsername.Text != "Admin")
+                Master.RfvUsername.ErrorMessage = "Invalid Admin name";
+            else if (Master.TxtPassword.Text != "Password")
+                Master.RfvPassword.ErrorMessage = "Invalid Password";
+            else
+            {
+                Response.Redirect("AdminConsole.aspx");
+            }
         }
     }
 }

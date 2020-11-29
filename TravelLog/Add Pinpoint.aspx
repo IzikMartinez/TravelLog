@@ -5,23 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Label ID="Label1" runat="server" Text="Travel Log"></asp:Label>
+        <asp:Label CssClass="readLbl" ID="Label1" runat="server" Text="Travel Log"></asp:Label>
         <br />
         <br />
-        <asp:Label ID="Label2" runat="server" Text="Location"></asp:Label>
+        <asp:Label CssClass="readLbl" ID="Label2" runat="server" Text="Location"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtLocation" runat="server" Width="222px"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label3" runat="server" Text="Date"></asp:Label>
+        <asp:Label CssClass="readLbl" ID="Label3" runat="server" Text="Date"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtDate" runat="server" Width="222px"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label4" runat="server" Text="Description"></asp:Label>
+        <asp:Label CssClass="readLbl" ID="Label4" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp;&nbsp;
         <p>
             <asp:TextBox ID="txtDescription" runat="server" Height="214px" Width="537px"></asp:TextBox>
@@ -33,7 +34,7 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TravelLogConnectionString %>" SelectCommand="SELECT * FROM [Pinpoint]"></asp:SqlDataSource>
         </p>
         <p>
-            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+            <asp:Label CssClass="readLbl" ID="Label5" runat="server" Text="Label"></asp:Label>
         </p>
     </form>
 </body>

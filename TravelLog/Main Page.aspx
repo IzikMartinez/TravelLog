@@ -15,7 +15,7 @@
         <p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TravelLogCS %>" SelectCommand="SELECT * FROM [Pinpoint]"></asp:SqlDataSource>
         </p>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label CssClass="readLbl" ID="Label1" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>
