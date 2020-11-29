@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="Main Page.aspx.cs" Inherits="TravelLog.Main_Page" %>
+﻿﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="Main Page.aspx.cs" Inherits="TravelLog.Main_Page" %>
 
 <!DOCTYPE html>
 
@@ -8,6 +8,9 @@
     <link href="StyleSheet1.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <form id="log" runat="server">
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClientClick="this.form.reset(); Response.Redirect(Login.aspx); return false;" />
+    </form>
     <form id="form1" runat="server">
         <asp:ImageButton ID="imgBackground" runat="server" Height="558px" ImageUrl="~/World Map Image.png" OnClick="map_Click" Width="1129px" />
         <br />
