@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Title" Language="C#" MasterPageFile="LoginMaster.master" CodeBehind="AdminLogin.aspx.cs" Inherits="TravelLog.AdminLogin" %>
+
 <asp:Content ContentPlaceHolderID="cphHeader" runat="server">
     <p class="mainLbl">Admin Login</p><br />
 </asp:Content>
