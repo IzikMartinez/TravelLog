@@ -1,0 +1,72 @@
+﻿body {
+}
+
+.btn {
+    border-radius: 3px;
+    background-color: rgb(62, 62, 248);
+    border: none;
+    padding: 0.5% 1%;
+
+    text-decoration: none;
+    text-align: center;
+    font-variant-caps: petite-caps;
+
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 160%;
+    color: white;
+}
+
+.btn:hover {
+    background-color: lightblue;
+    color: #252525;
+}
+
+
+
+.mainLbl {
+    font-size: 28px;
+    font-variant: all-small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.readLbl {
+    font-size: 20px;
+    font-variant-caps: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+}
+
+.box {
+    display: block;
+    width: 20%;
+    padding: 10px;
+
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0px 16px 0px 16px;
+    transition: 0.3s;
+}
+
+.box:focus {
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.25);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px 0px 16px 0px;
+}
